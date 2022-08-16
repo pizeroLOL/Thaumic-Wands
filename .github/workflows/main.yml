@@ -17,7 +17,7 @@ jobs:
         wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
         unzip gradle-4.10.2-bin.zip
         ./gradle-4.10.2/bin/gradle build --info
-        cp ./build/libs/* /opt/libs/
+        cp ./build/libs /opt/libs/
         
     - name : Upload packages
       uses: actions/upload-artifact@master
